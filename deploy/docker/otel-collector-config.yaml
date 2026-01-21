@@ -159,7 +159,7 @@ service:
     metrics:
       receivers: [otlp, hostmetrics, docker_stats]
       processors: [resourcedetection, resourcedetection/docker, batch]
-      exporters: [signozclickhousemetrics, signozmeter, otlp]
+      exporters: [signozclickhousemetrics, signozmeter]
     metrics/prometheus:
       receivers: [prometheus]
       processors: [batch]
