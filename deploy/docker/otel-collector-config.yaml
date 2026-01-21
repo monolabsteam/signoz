@@ -154,7 +154,7 @@ service:
   pipelines:
     traces:
       receivers: [otlp]
-      processors: [signozspanmetrics/delta batch]
+      processors: [signozspanmetrics/delta, batch]
       exporters: [clickhousetraces, signozmeter]
     metrics:
       receivers: [otlp, hostmetrics, docker_stats]
