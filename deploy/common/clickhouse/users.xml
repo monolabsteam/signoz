@@ -24,6 +24,8 @@
         <readonly>
             <readonly>1</readonly>
         </readonly>
+
+        <allow_simdjson>0</allow_simdjson>
     </profiles>
 
     <!-- Users and ACL. -->
